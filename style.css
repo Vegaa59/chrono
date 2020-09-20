@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.chronometre{
+    height: 100%;
+    background-color: rgb(57, 120, 255);
+}
+.chronometre:hover{
+    background-color: rgb(186, 208, 255);
+}
+.rebour{
+    height: 100%;
+    background-color: rgb(124, 166, 255);
+}
+.rebour:hover{
+    background-color: rgb(186, 208, 255);
+}
+.interval{
+    height: 100%;
+    background-color: rgb(57, 120, 255);
+}
+.interval:hover{
+    background-color: rgb(186, 208, 255);
+}
+.container a {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+@media (max-width : 640px){
+    
+        .container{
+            flex-direction: column;
+        } 
+        .container a {
+            width: 100%;
+        }
+    
+}

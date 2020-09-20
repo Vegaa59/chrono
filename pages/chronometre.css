@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(0, 102, 255), rgb(110, 168, 255));
+    overflow-x: hidden;
+}
+form{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.chrono{
+    display: flex;
+    flex-direction: column;
+}
+.affichage{
+    display: flex;
+    justify-content: center;
+}
+input{
+    font-size: 100px;
+    text-align: center;
+    border: none;
+    background-color: rgba(245, 245, 220, 0);
+    color: #fff;
+    text-transform: uppercase;
+}
+.bouton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.btn {
+    border-radius: 5px 5px;
+    background-color: rgb(146, 0, 27);
+    font-size: 50px;
+    -webkit-box-shadow: 4px 11px 17px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 11px 17px -4px rgba(0,0,0,0.75);
+box-shadow: 4px 11px 17px -4px rgba(0,0,0,0.75);
+padding: 10px 20px;
+}
+nav{
+    background-color: rgb(58, 58, 58);
+    height: 80px;
+    margin-top: 0;
+    display: flex ;
+    align-items: center;
+}
+ul{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+li a:hover{
+    color: black;
+}
+.stat{
+    width: 100%;
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 100px;
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100vw;
+}
+ol li {
+    margin-left: 50px;
+}

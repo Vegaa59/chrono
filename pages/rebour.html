@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronometre</title>
+    <link rel="stylesheet" href="chronometre.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a class="chronometre" href="../index.html">Accueil</a></li>
+            <li>
+                <a class="rebour" href="/pages/chronometre.html">chronometre</a></li>
+            <li>
+                <a class="interval" href="">intervalle </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="statretenu" class="stat">
+
+    </div>
+    <form name="chronoForm">
+        <div class="chrono">
+            <div class="affichage">
+        <input type="text" name="chronotime" id="chronotime" value="0:00:00"/>
+    </div>
+    <div class="bouton">
+          <input class="btn" type="button" name="startstop" value="stop" onClick="pause()" />
+          <input class="btn" type="button" name="interval" value="retenir" onClick="retenir()" />
+          <input class="btn" type="button" name="reset" value="reset" onClick="reset()" />
+        </div>
+        </div>
+      </form>
+</body>
+<script src="compte.js"></script>
+</html>
