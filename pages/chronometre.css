@@ -1,24 +1,24 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background: linear-gradient(rgb(0, 102, 255), rgb(110, 168, 255));
     overflow-x: hidden;
 }
-form{
+
+form {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-}
-.chrono{
-    display: flex;
     flex-direction: column;
 }
-.affichage{
+
+.affichage {
     display: flex;
     justify-content: center;
 }
-input{
+
+input {
     font-size: 100px;
     text-align: center;
     border: none;
@@ -26,44 +26,59 @@ input{
     color: #fff;
     text-transform: uppercase;
 }
-.bouton{
+
+.bouton {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
 }
+
 .btn {
     border-radius: 5px 5px;
     background-color: rgb(146, 0, 27);
     font-size: 50px;
-    -webkit-box-shadow: 4px 11px 17px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 11px 17px -4px rgba(0,0,0,0.75);
-box-shadow: 4px 11px 17px -4px rgba(0,0,0,0.75);
-padding: 10px 20px;
+    -webkit-box-shadow: 4px 11px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 11px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 11px 17px -4px rgba(0, 0, 0, 0.75);
+    padding: 10px 20px;
+    cursor: pointer;
 }
-nav{
+
+.btn:hover {
+    background-color: rgb(216, 0, 40);
+    border: 1px solid;
+}
+
+nav {
     background-color: rgb(58, 58, 58);
     height: 80px;
     margin-top: 0;
-    display: flex ;
+    display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
-ul{
+
+ul {
     width: 100%;
     display: flex;
     text-decoration: none;
     list-style-type: none;
     justify-content: space-around;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
 }
-li a:hover{
+
+li a:hover {
     color: black;
 }
-.stat{
+
+.stat {
     width: 100%;
     display: flex;
     color: #fff;
@@ -71,7 +86,8 @@ li a:hover{
     position: absolute;
     margin-top: 100px;
 }
-ol{
+
+ol {
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -79,6 +95,34 @@ ol{
     height: 200px;
     width: 100vw;
 }
+
 ol li {
     margin-left: 50px;
+}
+
+.select_time {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.select_time {
+    height: 50px;
+    margin-top: 50px;
+}
+
+select {
+    width: 15%;
+}
+
+#btnSelect {
+    width: 10%;
+}
+
+
+
+@media (max-width : 1060px) {
+    .bouton {
+        flex-direction: column;
+    }
 }

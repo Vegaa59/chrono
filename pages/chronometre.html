@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chronometre</title>
     <link rel="stylesheet" href="chronometre.css">
 </head>
+
 <body>
     <nav>
         <ul>
@@ -24,15 +26,17 @@
     <form name="chronoForm">
         <div class="chrono">
             <div class="affichage">
-        <input type="text" name="chronotime" id="chronotime" value="0:00:00:00"/>
-    </div>
-    <div class="bouton">
-          <input class="btn" type="button" name="startstop" value="stop" onClick="chronoStart()" />
-          <input class="btn" type="button" name="interval" value="retenir" onClick="retenir()" />
-          <input class="btn" type="button" name="reset" value="reset" onClick="chronoReset()" />
+                <input type="text" name="chronotime" id="chronotime" value="0:00:00:00" />
+            </div>
+            <div class="bouton">
+                <input class="btn" type="button" name="startstop" value="stop" onClick="chronoStart()" />
+                <input class="btn btn_retenir" type="button" name="interval" value="retenir" onClick="retenir()" />
+                <input class="btn" type="button" name="supprime" value="supprime" onClick="supprime()" />
+                <input class="btn" type="button" name="reset" value="reset" onClick="chronoReset()" />
+            </div>
         </div>
-        </div>
-      </form>
+    </form>
 </body>
 <script src="../script.js"></script>
+
 </html>
